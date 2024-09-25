@@ -14,5 +14,11 @@ public class App {
 
         // Imprimir el arreglo ordenado de manera descendente
         burbujas.printdescent(arregloDescendente);
+        //Ordenar las palabras alfabeticamente de la cadena de texto:
+        String cadena= "este es un ejemplo de texto para Ordenar";
+        String [] palabras= cadena.split(" ");
+        String [] palabrasOrdenadas= burbujas.sortByBubble(palabras);
+
+        burbujas.printArreglo(palabrasOrdenadas);
     }
-}
+    }
