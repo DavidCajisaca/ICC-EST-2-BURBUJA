@@ -1,5 +1,18 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        Metodos burbujas = new Metodos();
+        int[] arreglo = {5, 7, 43, 12, 10};
+
+        // Ordenar de manera ascendente
+        int[] arregloOrdenado = burbujas.burbuja(arreglo);
+
+        // Imprimir el arreglo ordenado de manera ascendente
+        burbujas.printarreglo(arregloOrdenado);
+
+        // Ordenar el mismo arreglo de manera descendente
+        int[] arregloDescendente = burbujas.burbujaDescendente(arregloOrdenado);
+
+        // Imprimir el arreglo ordenado de manera descendente
+        burbujas.printdescent(arregloDescendente);
     }
 }
